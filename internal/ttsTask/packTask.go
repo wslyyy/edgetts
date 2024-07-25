@@ -2,8 +2,8 @@ package ttsTask
 
 import (
 	"encoding/json"
-	"github.com/lib-x/edgetts/internal/communicate"
-	"github.com/lib-x/edgetts/internal/communicateOption"
+	"github.com/wslyyy/edgetts/internal/communicate"
+	"github.com/wslyyy/edgetts/internal/communicateOption"
 	"io"
 	"log"
 	"sync"

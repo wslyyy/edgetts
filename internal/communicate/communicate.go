@@ -19,9 +19,9 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/lib-x/edgetts/internal/businessConsts"
-	"github.com/lib-x/edgetts/internal/communicateOption"
-	"github.com/lib-x/edgetts/internal/validate"
+	"github.com/wslyyy/edgetts/internal/businessConsts"
+	"github.com/wslyyy/edgetts/internal/communicateOption"
+	"github.com/wslyyy/edgetts/internal/validate"
 	"golang.org/x/net/proxy"
 
 	"github.com/google/uuid"
@@ -156,7 +156,8 @@ func makeHeaders() http.Header {
 
 func (c *Communicate) stream() (<-chan map[string]interface{}, error) {
 	texts := splitTextByByteLength(
-		escape(removeIncompatibleCharacters(c.text)),
+		removeIncompatibleCharacters(c.text),
+		//escape(removeIncompatibleCharacters(c.text)),
 		calculateMaxMessageSize(c.opt.Pitch, c.opt.Voice, c.opt.Rate, c.opt.Volume),
 	)
 	c.audioDataIndex = len(texts)

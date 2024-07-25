@@ -2,7 +2,7 @@ package edgetts
 
 import (
 	"encoding/json"
-	"github.com/lib-x/edgetts/internal/businessConsts"
+	"github.com/wslyyy/edgetts/internal/businessConsts"
 	"net/http"
 	"sync"
 )

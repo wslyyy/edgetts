@@ -1,4 +1,4 @@
-module github.com/lib-x/edgetts
+module github.com/wslyyy/edgetts
 
 go 1.21.6
 
